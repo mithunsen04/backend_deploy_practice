@@ -18,6 +18,6 @@ app.use('/users', authRoutes);
 app.use('/posts', postRoutes);
 
 // Start the server
-app.listen(port, () => {
-  console.log(`Server started on port ${port}`);
+app.listen(process.env.PORT, () => {
+  console.log(`Server started on port ${process.env.PORT}`);
 });
